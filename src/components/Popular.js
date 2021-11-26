@@ -26,7 +26,7 @@ const Popular = () => {
                   src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`}
                   alt=""
                 />
-                <h5>{movie?.title}</h5>
+                <h4 className="title">{movie?.title}</h4>
                 <p>{movie?.overview}</p>
                 <p>
                   Rating: {movie?.vote_average} ({movie?.vote_count} votes)

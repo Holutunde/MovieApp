@@ -1,10 +1,10 @@
-import React from "react";
-import useFetch from "../hooks/useFetch";
+import React from 'react'
+import useFetch from '../hooks/useFetch'
 
 const Latest = () => {
-  const { loading, response, error } = useFetch("/latest");
+  const { loading, response, error } = useFetch('/latest')
 
-  console.log("lastest", { loading, response, error });
+  console.log('lastest', { loading, response, error })
 
   return (
     <div>
@@ -20,8 +20,11 @@ const Latest = () => {
               src={`https://image.tmdb.org/t/p/w500${response?.poster_path}`}
               alt=""
             />
-            <h5>{response?.title}</h5>
-            <p>{response?.overview}</p>
+            <h2>Title: {response?.title}</h2>
+            <p>Overview: {response?.overview}</p>
+            <p>Original Language: {response?.original_language}</p>
+            <p>Run Time: {response?.runtime} mins</p>
+            <p>Release Date: {response?.release_date}</p>
             <p>
               Rating: {response?.vote_average} ({response?.vote_count} votes)
             </p>
@@ -29,7 +32,7 @@ const Latest = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Latest;
+export default Latest

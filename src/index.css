@@ -1,23 +1,27 @@
-.App {
-  width: 100%;
-  height: 100%;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
 nav {
+
   width: 100%;
   height: 70px;
   display: flex;
-  align-items: center;
+  position: fixed;
   justify-content: center;
   background-color: darkcyan;
 }
 
 nav > div {
-  padding: 0 20px;
+  padding: 0 30px;
   cursor: pointer;
   color: #fff;
   transition: all 0.5s;
-  height: 100%;
+ 
   line-height: 70px;
 }
 
@@ -26,14 +30,13 @@ nav > div:hover {
 }
 
 .content {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1000px;
+  padding-top: 100px;
+  margin-left: 200px;
+  
 }
 
 .row {
   display: flex;
-
   justify-content: flex-start;
   flex-wrap: wrap;
 }
@@ -41,7 +44,7 @@ nav > div:hover {
 .column {
   display: flex;
   width: calc(20% - 30px);
-  padding: 10px;
+  padding: 15px;
   flex-direction: column;
 }
 
@@ -62,6 +65,8 @@ nav > div:hover {
   -webkit-box-orient: vertical;
 }
 .latest {
+  margin-bottom:30px ;
+  margin-top: 20px;
   padding: 15px;
   width: 30%;
   height: 40%;
@@ -96,4 +101,12 @@ form {
   height: 30px;
   border-radius: 3px;
   background-color:rgb(220, 240, 240);
+}
+.header{
+  /* position: fixed; */
+  
+}
+.title{
+  padding-top: 10px;
+  padding-bottom:15px;
 }
